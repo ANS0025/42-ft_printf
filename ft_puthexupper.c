@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_puthexupper(unsigned int n)
+int	ft_puthexupper(unsigned long long n)
 {
 	int	count;
 

@@ -17,6 +17,11 @@ int	ft_putstr(char *s)
 	int	count;
 
 	count = 0;
+	if (s == NULL)
+	{
+		ft_putstr("(null)");
+		return (6);
+	}
 	while (*s)
 		count += ft_putchar(*s++);
 	return (count);

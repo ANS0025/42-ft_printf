@@ -26,7 +26,7 @@ int	ft_parse(char c, va_list args)
 	else if (c == 'd' || c == 'i')
 		count += ft_putnbr(va_arg(args, int));
 	else if (c == 'u')
-		count += ft_putnbr(va_arg(args, unsigned int));
+		count += ft_putunsigned(va_arg(args, unsigned int));
 	else if (c == 'x')
 		count += ft_puthex(va_arg(args, unsigned int));
 	else if (c == 'X')

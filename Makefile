@@ -7,7 +7,7 @@ CFLAGS = -Wall -Wextra -Werror
 LIBFTDIR = ./libft
 SRCS = \
 	ft_printf.c ft_parse.c ft_putchar.c ft_puthex.c ft_puthexupper.c \
-	ft_putnbr.c ft_putptr.c ft_putstr.c
+	ft_putnbr.c ft_putptr.c ft_putstr.c ft_putunsigned.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
