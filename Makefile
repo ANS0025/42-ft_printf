@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 LIBFTNAME = libft.a
 
-CC = cc
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 LIBFTDIR = ./libft
@@ -22,12 +22,11 @@ $(NAME): makelibft $(OBJS)
 
 clean:
 	rm -f $(OBJS)
-	cd $(LIBFTDIR) && make clean
+	make -C $(LIBFTDIR) clean
 
 fclean: clean
 	rm -f $(NAME)
-
-cd $(LIBFTDIR) && make fclean
+	make -C $(LIBFTDIR) fclean
 
 re: fclean all
 
